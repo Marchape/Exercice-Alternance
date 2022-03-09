@@ -50,9 +50,15 @@ ini_set('display_errors', 1);
 
 
         if($statement->execute()){
-			print "Salut " . $nom . "!, votre adresse e-mail est ". $mail . " et ton numéro est ".$phone;
+			print "Salut " . $nom . ", votre adresse e-mail est ". $mail . " et ton numéro est ".$phone;
 		}else{
 			print $mysqli->error; 
 		}
 	}
 ?>
+<!DOCTYPE html>
+<html lang="fr">
+    <body>
+        <a href="http://localhost/bulko/affichage.php">Voir les réponses</a>
+</body>
+</html>
