@@ -21,7 +21,7 @@
 
     <header>
         <img src="img/logoBulko.png" alt="logo bulko" id="logo"/>
-        <a href="http://bulko/affichage.php" id="contact">CONTACT</a>
+        <a href="http://localhost/bulko/affichage.php" id="contact">CONTACT</a>
         <a href="#" alt="Réseaux sociaux" id="rs"><img src="img/reseauxSociaux.png" /></a>
         
     </header>
