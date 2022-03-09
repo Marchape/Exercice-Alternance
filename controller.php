@@ -59,6 +59,6 @@ ini_set('display_errors', 1);
 <!DOCTYPE html>
 <html lang="fr">
     <body>
-        <a href="http://localhost/bulko/affichage.php">Voir les réponses</a>
+        <a href="http://localhost/bulko/affichage.php">Voir les réponses des autres participants</a>
 </body>
 </html>
