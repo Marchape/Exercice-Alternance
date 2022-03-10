@@ -10,9 +10,10 @@ ini_set('display_errors', 1);
 		$usernom = "bulko";
 		$password = "bulko";
 		$database = "bulko";
-
+        //xvar_dump ($_POST);
 		$nom = $_POST["nom"]; 
-		$mail = $_POST["mail"];
+        if(isset($_POST['mail'])&&!empty($_POST['mail'])){$mail = $_POST["mail"];} else {$mail=null;}
+		//var_dump($mail);
 		$phone = $_POST["phone"];
         $message = $_POST["message"];
 
@@ -36,11 +37,15 @@ ini_set('display_errors', 1);
         } else {
         echo "Numéro de téléphone incorrect";
         }
-
-        if (!isset($mail) || !filter_var($mail, FILTER_VALIDATE_EMAIL)){
+        
+//pour rendre l'email non obligatoire, je vérifie si il est valide que si il est saisi
+        if (isset($mail)){
+        if( !filter_var($mail, FILTER_VALIDATE_EMAIL)){
 			die("S'il vous plaît veuillez entrez une adresse e-mail correcte.");
-		}	
-
+		}}else {
+            $mail="";//pour insérer un email vide
+        }
+        
         $mysqli = new mysqli($host, $usernom, $password, $database);
         if ($mysqli->connect_error) {
 			die('Error : ('. $mysqli->connect_errno .') '. $mysqli->connect_error);
