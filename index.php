@@ -19,7 +19,7 @@
 
 <body>
 
-    <header>
+    <header> 
         <img src="img/logoBulko.png" alt="logo bulko" id="logo"/>
         <a href="affichage.php" id="contact">CONTACT</a>
         <a href="#" alt="Réseaux sociaux" id="rs"><img src="img/reseauxSociaux.png" /></a>
@@ -29,16 +29,17 @@
     <div id="formulaire"> 
         <form method="post" action="controller.php">
             <div id="cg">
-                <input type="text" id="name" name="nom" placeholder="Nom"> <br/>
-                <input type="text" id="mail" name="mail" placeholder="Mail"><br/>
-                <input type="text" id="phone" name="phone" placeholder="Téléphone"><br/>
+                <input type="text" class="form" id="name" name="nom" placeholder="Nom"> <br/>
+                <input type="text" class="form" id="mail" name="mail" placeholder="Mail"><br/>
+                <input type="text" class="form" id="phone" name="phone" placeholder="Téléphone"><br/>
             </div>
             <div id="cd">
-                    <textarea id="message" name="message" placeholder="Message" rows="7" cols="25"></textarea><br/>
-                    <input type="submit" id="bouton" name="bouton" value="ENVOYER"/>
+                    <textarea id="message" name="message" placeholder="Message" rows="7" cols="25"></textarea><br/><br/>
+                    <input type="submit" class="form" id="bouton" name="bouton" value="ENVOYER"/>
             </div>
         </form>
         
+
 
     </div>
 

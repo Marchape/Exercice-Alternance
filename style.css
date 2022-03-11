@@ -1,11 +1,11 @@
-@font-face {
-    font-family: Gill;
-    src: url("font/GillSans-Light.ttf") format("tff"), url("font/GillSans-Light.ttf") format("tff");
-}
-
 * {
     font-family: Gill, sans-serif;
     color: #fff;
+}
+
+@font-face {
+    font-family: Gill;
+    src: url("font/GillSans-Light.ttf") format("tff"), url("font/GillSans-Light.ttf") format("tff");
 }
 
 body {
@@ -55,6 +55,10 @@ header {
     color: rgb(255, 255, 255);
 }
 
+#cg {
+    width: 50%;
+}
+
 input {
     background-color: #a7a7a7;
     font-size: 20pt;
@@ -64,7 +68,10 @@ input {
 }
 
 input:focus {
-    border: 0px;
+    border: 0px solid #1670be00;
+    box-shadow: 0 0 3px #1670be00;
+    outline-offset: 0px;
+    outline: none;
 }
 
  ::placeholder {
@@ -84,6 +91,13 @@ textarea {
     font-family: Gill;
     resize: none;
     border: none;
+}
+
+textarea:focus {
+    border: 0px solid #1670be00;
+    box-shadow: 0 0 3px #1670be00;
+    outline-offset: 0px;
+    outline: none;
 }
 
 #cg {
@@ -121,16 +135,80 @@ textarea {
     font-weight: normal;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 400px) and (max-width:767px) {
     header {
         width: 100%;
     }
     #logo {
-        width: 10%;
+        position: absolute;
+        width: 18%;
         height: auto;
+        top: 1%;
+        left: 0px;
+    }
+    #contact {
+        margin-top: 1.1em;
+        font: 21pt Gill, sans-serif;
+        text-align: center;
     }
     #rs {
-        width: 10%;
+        position: absolute;
+        top: 2%;
+        right: 0px;
+        float: right;
         height: auto;
+        /*display: inline-block;*/
+    }
+    #rs img {
+        width: 70%;
+    }
+    #formulaire {
+        height: 40em;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    #cg {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #cg input {
+        width: 400px;
+        height: 50px;
+        align-self: center;
+        margin-left: 0;
+    }
+     ::placeholder {
+        /* opacity: 0.75; */
+        opacity: 1;
+    }
+    #cd {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+    }
+    #cd #message {
+        position: absolute;
+        margin-top: 40%;
+        align-self: center;
+        margin-right: 0;
+    }
+    #cd #bouton {
+        position: absolute;
+        align-self: center;
+        margin-left: 0;
+        margin-top: 120%;
     }
 }
