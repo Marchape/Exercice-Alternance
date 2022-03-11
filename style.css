@@ -130,7 +130,7 @@ textarea:focus {
     padding-right: 1em;
     padding-left: 1em;
     margin-right: 2em;
-    margin-top: 0.5em;
+
     font-size: 20pt;
     font-weight: normal;
 }
@@ -163,7 +163,7 @@ textarea:focus {
         width: 70%;
     }
     #formulaire {
-        height: 40em;
+        height: 47em;
         margin-top: 10%;
         margin-bottom: 10%;
         margin-left: 4%;
@@ -179,7 +179,7 @@ textarea:focus {
         justify-content: center;
     }
     #cg input {
-        width: 400px;
+        width: 350px;
         height: 50px;
         align-self: center;
         margin-left: 0;
@@ -188,27 +188,26 @@ textarea:focus {
         /* opacity: 0.75; */
         opacity: 1;
     }
-    #cd {
-        position: absolute;
+    #cd {clear:both;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         bottom: 0;
     }
-    #cd #message {
-        position: absolute;
-        margin-top: 40%;
+    #cd .form2 {clear:both;
+        position: relative;
+        margin-top: 2em;
         align-self: center;
         margin-right: 0;
     }
-    #cd #bouton {
-        position: absolute;
-        align-self: center;
-        margin-left: 0;
-        margin-top: 120%;
+   #cd #bouton {
+        
+        margin-right: 0;
+        margin-top: 1em;
     }
 }
