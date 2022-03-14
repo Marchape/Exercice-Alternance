@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+    
 
 
 
@@ -31,7 +31,7 @@ $i = 0;
         ?>
         <div id="tableauperso">
             <h2 class="nomperso"> <?php echo $mon_tableau_de_utilisateurs[$i]['nom']; ?></h2>
-            <p class="presentation"><?php echo $mon_tableau_de_utilisateurs[$i]['mail']; ?></p>
+            <p><?php echo $mon_tableau_de_utilisateurs[$i]['mail']; ?></p>
             <p><?php echo $mon_tableau_de_utilisateurs[$i]['phone']; ?></p>
             <p><?php echo $mon_tableau_de_utilisateurs[$i]['message']; ?></p>
 

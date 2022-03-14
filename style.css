@@ -135,6 +135,8 @@ textarea:focus {
     font-weight: normal;
 }
 
+
+
 @media (min-width: 400px) and (max-width:767px) {
     header {
         width: 100%;
