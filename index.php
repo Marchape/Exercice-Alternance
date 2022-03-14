@@ -34,8 +34,8 @@
                 <input type="text" class="form" id="phone" name="phone" placeholder="Téléphone"><br/>
             </div>
             <div id="cd">
-                    <textarea id="message" name="message" placeholder="Message" rows="7" cols="25"></textarea><br/><br/>
-                    <input type="submit" class="form" id="bouton" name="bouton" value="ENVOYER"/>
+                    <textarea id="message" class="form2"name="message" placeholder="Message" rows="7" cols="25"></textarea><br/><br/>
+                    <input type="submit" class="form2" id="bouton" name="bouton" value="ENVOYER"/>
             </div>
         </form>
         

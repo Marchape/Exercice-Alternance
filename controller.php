@@ -10,7 +10,7 @@ ini_set('display_errors', 1);
 		$usernom = "bulko";
 		$password = "bulko";
 		$database = "bulko";
-        //xvar_dump ($_POST);
+        //var_dump ($_POST);
 		$nom = $_POST["nom"]; 
         if(isset($_POST['mail'])&&!empty($_POST['mail'])){$mail = $_POST["mail"];} else {$mail=null;}
 		//var_dump($mail);
@@ -40,9 +40,10 @@ ini_set('display_errors', 1);
         
 //pour rendre l'email non obligatoire, je vérifie si il est valide que si il est saisi
         if (isset($mail)){
-        if( !filter_var($mail, FILTER_VALIDATE_EMAIL)){
-			die("S'il vous plaît veuillez entrez une adresse e-mail correcte.");
-		}}else {
+            if( !filter_var($mail, FILTER_VALIDATE_EMAIL)){
+			    die("S'il vous plaît veuillez entrez une adresse e-mail correcte.");
+		    }
+        }else {
             $mail="";//pour insérer un email vide
         }
         
@@ -55,7 +56,7 @@ ini_set('display_errors', 1);
 
 
         if($statement->execute()){
-			print "Salut " . $nom . ", votre adresse e-mail est ". $mail . " et ton numéro est ".$phone;
+			print "Salut " . $nom . ", ton adresse e-mail est ". $mail . " et ton numéro est ".$phone;
 		}else{
 			print $mysqli->error; 
 		}
